@@ -1,11 +1,6 @@
 #pragma once
 #include "figure.h"
 
-#ifdef FIGURESLIB_EXPORTS
-#define FIGURESLIB_API __declspec(dllexport)
-#else
-#define FIGURESLIB_API __declspec(dllimport)
-#endif
 class Quadrangle : public Figure {
 public:
 	FIGURESLIB_API Quadrangle();

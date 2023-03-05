@@ -1,13 +1,7 @@
 #pragma once
 #include <string>
-#include <iostream>
 #include "incorrect_figure.h"
 
-#ifdef FIGURESLIB_EXPORTS
-#define FIGURESLIB_API __declspec(dllexport)
-#else
-#define FIGURESLIB_API __declspec(dllimport)
-#endif
 class Figure {
 public:
 	FIGURESLIB_API bool virtual check();
